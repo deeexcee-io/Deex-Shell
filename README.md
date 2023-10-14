@@ -1,10 +1,10 @@
 # Deex-Shell
-Obfuscated PowerShell Reverse Shell Executable
+Obfuscated PowerShell Reverse Shell Executable. Unashamedly made with assistance from chatgpt 🧠 💻
 
 # Simple-C#/PowerShell-Reverse-Shell-Executable
-FUD Executable Reverse Shell .exe
+Current Undetected Executable Reverse Shell .exe
 
-Utilises an unique obfuscated Powershell Reverse Shell One Liner each time.
+Utilises a unique obfuscated Powershell Reverse Shell One Liner each time.
 
 The One Liner is then utilised in the executable which calls PowerShell and executes the obfuscated string.
 
