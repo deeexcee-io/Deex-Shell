@@ -21,7 +21,7 @@ sudo apt install mono-devel
 
 Then simply run 
 ```
-python3 PowerShell-Executable.py
+python3 deex-shell.py
 
 ```
 Enter your IP and Port Number
