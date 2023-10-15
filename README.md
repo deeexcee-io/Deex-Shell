@@ -1,3 +1,8 @@
+# Edit
+
+Now getting detected. It was fun while it lasted ⚰️
+
+
 # Deex-Shell
 Obfuscated PowerShell Reverse Shell Executable. Unashamedly made with assistance from chatgpt 🧠 💻
 
