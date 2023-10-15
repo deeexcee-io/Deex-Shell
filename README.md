@@ -2,15 +2,18 @@
 Obfuscated PowerShell Reverse Shell Executable. Unashamedly made with assistance from chatgpt 🧠 💻
 
 # Simple-C#/PowerShell-Reverse-Shell-Executable
-Current Undetected Executable Reverse Shell .exe
+Current Undetected Executable Reverse Shell Windows PE. 
 
-Utilises a unique obfuscated Powershell Reverse Shell One Liner each time.
+The script generates a unique, obfuscated Powershell Reverse Shell One Liner each time.
 
 The One Liner is then utilised in the executable which calls PowerShell and executes the obfuscated string.
 
+
+Perfect for CTF or Pen Testing purposes if Defender is running. 
+
 ## Pre-requisites
 
-It uses mono to compile the C# code in the python script into an executable.
+It uses mono to compile the C# code in the python script into an executable so must be installed prior to running the script. 
 
 On Kali
 ```
