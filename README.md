@@ -5,8 +5,7 @@ Obfuscated PowerShell Reverse Shell Executable. Unashamedly made with assistance
 Current Undetected Executable Reverse Shell Windows PE. 
 
 The script generates a unique, obfuscated Powershell Reverse Shell One Liner each time.
-
-The One Liner is then utilised in the executable which calls PowerShell and executes the obfuscated string.
+The One Liner is then utilised in the executable which executes the obfuscated string when run. 
 
 
 Perfect for CTF or Pen Testing purposes if Defender is running. 
