@@ -1,14 +1,5 @@
-# Edit
-
-Now getting detected. It was fun while it lasted ⚰️
-
-## Edit 
-
-Working on something new, check back soon
-
-
 # Deex-Shell
-Obfuscated PowerShell Reverse Shell Executable. Unashamedly made with assistance from chatgpt 🧠 💻
+Small program that creates an onfiscated PowerShell Reverse Shell One Liner and PE. Unashamedly made with assistance from chatgpt 🧠 💻
 
 # Simple-C#/PowerShell-Reverse-Shell-Executable
 Current Undetected Executable Reverse Shell Windows PE. 
@@ -33,15 +24,25 @@ sudo apt install mono-devel
 Then simply run 
 ```
 python3 deex-shell.py
-
 ```
-Enter your IP and Port Number
+## Option 1
 
-![image](https://github.com/deeexcee-io/Deex-Shell/assets/130473605/7288c047-32f4-4f5e-88be-e4250df798c5)
+Creates an Obfuscated and currently undetected (Defender) PowerShell Reverse Shell Script and PE. The program then launches a HTTP server to host the PowerShell Script which the executable grabs during execution.
 
-It outputs a file called `temp.exe` which can be executed on Windows.
+## Option 2
 
-Currently undectable 14/10/2023
+Outputs the PE and PowerShell Script to host and excute when needed.
 
-![image](https://github.com/deeexcee-io/Deex-Shell/assets/130473605/92dd3499-c5d1-42b3-903b-c2f5e8d7e96e)
+## Option 3 
+
+Outputs the Obfuscated PowerShell Script
+
+![image](https://github.com/deeexcee-io/Deex-Shell/assets/130473605/528d5efe-282e-4fea-b2b7-a019f9b5ab54)
+
+Currently undetectable but behavioural detections can class it as "malicious". What I mean by that is if the executable is transferred over and then executed immediatley, the fact it reaches out to a remote address and calls PowerShell is suspicious.
+
+![image](https://github.com/deeexcee-io/Deex-Shell/assets/130473605/b58ca73a-864c-4f20-b118-cb4c44625f4e)
+
+
+
 
