@@ -1,7 +1,7 @@
 # Deex-Shell
 Interactive Python Program that creates a Windows Executable which utilises an Obfuscated PowerShell One Liner to get a reverse shell. 
 
-# C#/PowerShell-Reverse-Shell-Executable
+# C#/PowerShell Reverse Shell Executable
 Currently Undetected Executable Reverse Shell Windows PE. 
 
 The program generates a unique, obfuscated Powershell Reverse Shell One Liner each time.
