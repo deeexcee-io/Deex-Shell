@@ -2,7 +2,7 @@
 Interactive Python Wrapper that creates an Executable which utilises an Obfuscated PowerShell Reverse Shell One Liner. 
 
 # C#/PowerShell-Reverse-Shell-Executable
-Current Undetected Executable Reverse Shell Windows PE. 
+Currently Undetected Executable Reverse Shell Windows PE. 
 
 The script generates a unique, obfuscated Powershell Reverse Shell One Liner each time.
 The One Liner is then utilised in the executable which executes the obfuscated Powershell Reverse Shell when run. 
