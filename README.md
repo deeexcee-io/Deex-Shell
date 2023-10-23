@@ -32,7 +32,7 @@ Creates an Obfuscated and currently undetected (Defender) PowerShell Reverse She
 
 ## Option 2
 
-Outputs the PE and PowerShell Script to host to all you to excute when needed.
+Outputs the PE and PowerShell Script to host to allow you to excute when needed.
 
 ## Option 3 
 
