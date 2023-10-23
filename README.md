@@ -11,6 +11,12 @@ The C# code and PowerShell Script are dynamically generated each time so no 2 fi
 
 Perfect for CTF or Pen Testing purposes if Defender is running. 
 
+# Motivation 
+
+Back when I was learning Pen Testing, it was fun. Smashing boxes and exploiting issues with Meterpreter Shells raining down upon you. But AV was never a consideration. Enter the real world and any decent AV will shutdown script kiddie tactics, kill a meterpreter shell and ruin your day. I wanted, or accurately needed something I could use as a PoC when testing and for reporting purposes. Having not enough knowledge of the windows api and coding in C or C# to make one from scratch, I took what I did know enough of i.e bash, python, powershell and some C# and mixed it all together to create this. It's clunky, it's not stealthy but if you need to execute an .exe to get a shell, then this works quite well. 
+
+Any and all feedback is appreciated. 
+
 ## Pre-requisites
 
 It uses mono to compile the C# code in the python script into an executable so must be installed prior to running the script. 
