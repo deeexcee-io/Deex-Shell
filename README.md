@@ -38,8 +38,11 @@ Outputs the PE and PowerShell Script to host to all you to excute when needed.
 
 Outputs the Obfuscated PowerShell Script only
 
+## Deex-Shell in Action
+
 ![image](https://github.com/deeexcee-io/Deex-Shell/assets/130473605/528d5efe-282e-4fea-b2b7-a019f9b5ab54)
 
+ 
 Currently undetectable but behavioural detections can class it as "malicious". What I mean by that is if the executable is transferred over and then executed immediatley, the fact it reaches out to a remote address and calls PowerShell is suspicious.
 
 ![image](https://github.com/deeexcee-io/Deex-Shell/assets/130473605/b58ca73a-864c-4f20-b118-cb4c44625f4e)
