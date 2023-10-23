@@ -1,13 +1,48 @@
 # Deex-Shell
-Interactive Python Wrapper that creates a Windows Executable which utilises an Obfuscated PowerShell Reverse Shell One Liner. 
+Interactive Python Program that creates a Windows Executable which utilises an Obfuscated PowerShell One Liner to get a reverse shell. 
 
 # C#/PowerShell-Reverse-Shell-Executable
 Currently Undetected Executable Reverse Shell Windows PE. 
 
 The program generates a unique, obfuscated Powershell Reverse Shell One Liner each time.
-The One Liner is then utilised in the executable which executes the obfuscated Powershell Reverse Shell when run. 
+The One Liner is then utilised in the executable which executes the obfuscated Powershell Reverse Shell when ran. 
 
-The C# code and PowerShell Script are dynamically generated each time so no 2 files should be the same.
+The C# code and PowerShell Script are dynamically generated each time so no 2 files should be the same, even with the same IP Address and Port.
+```python
+[+] Enter 1 to Create PE and start Listeners
+[+] Enter 2 to simply create a PE
+[+] Enter 3 to simply create a Obfuscated PowerShell Reverse Shell One Liner
+
+
+<--Deex--># : 2
+Enter IP address: 192.168.227.128
+Enter port: 55555
+[+] PE has been saved as CHIoWmocNR.exe and Remote PowerShell Reverse Shell Script has been saved as maDWQUYjzg in the current directory
+Returning to Main Menu....
+
+[+] Enter 1 to Create PE and start Listeners
+[+] Enter 2 to simply create a PE
+[+] Enter 3 to simply create a Obfuscated PowerShell Reverse Shell One Liner
+
+
+<--Deex--># : 2
+Enter IP address: 192.168.227.128
+Enter port: 55555
+[+] PE has been saved as jsUcXGaUhW.exe and Remote PowerShell Reverse Shell Script has been saved as KyKzkOlXyV in the current directory
+Returning to Main Menu....
+
+[+] Enter 1 to Create PE and start Listeners
+[+] Enter 2 to simply create a PE
+[+] Enter 3 to simply create a Obfuscated PowerShell Reverse Shell One Liner
+
+┌──(kali㉿kali)-[/opt/Deex-Shell]
+└─$ md5sum CHIoWmocNR.exe 
+894d03e8c5a9f2fb49a4f8fe8180e8bf  CHIoWmocNR.exe
+                                                                                                                                                     
+┌──(kali㉿kali)-[/opt/Deex-Shell]
+└─$ md5sum jsUcXGaUhW.exe 
+2d07a03856acf334e878be35c079613e  jsUcXGaUhW.exe
+```
 
 Perfect for CTF or Pen Testing purposes if Defender is running. 
 
