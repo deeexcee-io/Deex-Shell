@@ -81,6 +81,10 @@ Outputs the Obfuscated PowerShell Script only
 
 ## Deex-Shell in Action
 
+https://github.com/deeexcee-io/Deex-Shell/assets/130473605/81c69cf0-4906-4b7e-af1f-74f4bded7234
+
+
+
 ![image](https://github.com/deeexcee-io/Deex-Shell/assets/130473605/528d5efe-282e-4fea-b2b7-a019f9b5ab54)
 
  
