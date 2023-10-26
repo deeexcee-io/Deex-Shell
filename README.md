@@ -1,5 +1,10 @@
 # Deex-Shell
 Interactive Python Program that creates a Windows Executable which utilises an Obfuscated PowerShell One Liner to get a reverse shell. 
+## Update
+Line 117 in the code which is part of the C# Code had a static string which I believe was getting picked up and classing the PE as malicious. If testing, please turn off automatic sample submission. 
+That being said, it should be random now but if you get any issues change any of the numbers after exit to a different number between 1 and 10. `{5}.StandardInput.WriteLine("exit;{1}{9}{2}{10}{3}{1}{2}`
+
+!!! Dont change {5} it is a variable name that is required elsewhere in the code !!!
 
 # C#/PowerShell Reverse Shell Executable
 Currently Undetected Executable Reverse Shell Windows PE. 
