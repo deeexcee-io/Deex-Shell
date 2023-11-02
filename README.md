@@ -7,7 +7,7 @@ That being said, it should be random now but if you get any issues change any of
 !!! Dont change {5} it is a variable name that is required elsewhere in the code !!!
 
 # C#/PowerShell Reverse Shell Executable
-Currently Undetected Executable Reverse Shell Windows PE. 
+Currently Undetected (Defender) Executable Reverse Shell Windows PE. 
 
 The program generates a unique, obfuscated Powershell Reverse Shell One Liner each time.
 The One Liner is then utilised in the executable which executes the obfuscated Powershell Reverse Shell when ran. 
