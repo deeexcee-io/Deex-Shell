@@ -51,10 +51,6 @@ Returning to Main Menu....
 
 Perfect for CTF or Pen Testing purposes if Defender is running. 
 
-# Motivation 
-
-Back when I was learning Pen Testing, it was fun. Smashing boxes and exploiting issues with Reverse/Meterpreter Shells raining down upon you. But AV was never a consideration. Enter the real world and any decent AV will shutdown script kiddie tactics, kill a reverse shell and ruin your day. I wanted, or accurately needed something I could use as a PoC when testing and for reporting purposes. Having not enough knowledge of the windows sysinternals and coding in C or C# to make one from scratch, I took what I did know enough of i.e bash, python, powershell, some C# and a healthy dose of asking chatgpt questions, I mixed it all together and created this. It's clunky, it's not stealthy, but if you need to execute an .exe to get a shell and bypass AV (Only tested on Defender), then this works quite well. 
-
 Any and all feedback is appreciated. 
 
 ## Pre-requisites
